@@ -1,1 +1,21 @@
 C:\Users\JuanPablo\Documents\desarrollo\TRABAJO FINAL\webVeterinaria\WebVeterinaria\obj\Debug\WebVeterinaria.csprojResolveAssemblyReference.cache
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\csc.exe
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\vbc.exe
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\VBCSCompiler.exe
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\WebVeterinaria.dll.config
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\WebVeterinaria.dll
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\WebVeterinaria.pdb
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\obj\Debug\WebVeterinaria.csprojResolveAssemblyReference.cache
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\obj\Debug\WebVeterinaria.dll
+C:\Users\Yeison\Documents\WebVeterinaria\Veterinaria\WebVeterinaria\WebVeterinaria\obj\Debug\WebVeterinaria.pdb

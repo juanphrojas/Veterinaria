@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="frmPrincipal.master.cs" Inherits="WebVeterinaria.frmPrincipal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body {
+           margin: 0px;
+           padding: 0px;
+           border: 0px;
+           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 344px;
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="frmPrincipal" runat="server">
+
+
+        <table cellpadding="0" cellspacing="0" class="auto-style1">
+            <tr>
+                <td class="auto-style2" style="background-color: #0033CC; color: #FFFFFF">
+                    <table cellpadding="0" cellspacing="0" class="auto-style1">
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">
+                                <asp:Image ID="Image1" runat="server" Height="130px" ImageUrl="~/imagenes/logotipo.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">
+                                <asp:ContentPlaceHolder ID="Encabezado" runat="server">
+                                    <p>
+                                        SISTEMA DE CONTROL VETERINARIO</p>
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">
+                                <asp:ContentPlaceHolder ID="Menu" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="auto-style3">
+                    <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        </asp:ScriptManager>
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        </asp:UpdatePanel>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            </table>
+
+
+    </form>
+</body>
+</html>

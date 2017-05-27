@@ -78,7 +78,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="frmControl.aspx" />
+    <Content Include="imagenes\logotipo.png" />
     <Content Include="packages.config" />
+    <Content Include="frmPrincipal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -97,6 +100,20 @@
     <Compile Include="clsControl.cs" />
     <Compile Include="clsRaza.cs" />
     <Compile Include="clsServicio.cs" />
+    <Compile Include="frmControl.aspx.cs">
+      <DependentUpon>frmControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmControl.aspx.designer.cs">
+      <DependentUpon>frmControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.Master.cs">
+      <DependentUpon>frmPrincipal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Master.designer.cs">
+      <DependentUpon>frmPrincipal.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
