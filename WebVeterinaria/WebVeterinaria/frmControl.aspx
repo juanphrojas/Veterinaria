@@ -1,124 +1,101 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/frmPrincipal.Master" AutoEventWireup="true" CodeBehind="frmControl.aspx.cs" Inherits="WebVeterinaria.Formulario_web1" %>
-<asp:Content ID="Content4" ContentPlaceHolderID="Cuerpo" runat="server">
-    <table cellpadding="0" cellspacing="0" class="auto-style4">
-    <tr>
-        <td>
-            &nbsp;</td>
-    </tr>
-    <tr>
-        <td>CONTROL VETERINARIO</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="background-color: #0099CC; font-size: medium; color: #FFFFFF"><strong>
-            <asp:Menu ID="mnuOpciones" runat="server" CssClass="nuevoEstilo7" ForeColor="White" Orientation="Horizontal" RenderingMode="Table" Width="100%">
-                <Items>
-                    <asp:MenuItem Text="Agregar" Value="opcAgregar"></asp:MenuItem>
-                    <asp:MenuItem Text="Modificar" Value="opcModificar"></asp:MenuItem>
-                    <asp:MenuItem Text="Buscar" Value="opcBuscar"></asp:MenuItem>
-                </Items>
-                <StaticHoverStyle BackColor="#00CCFF" />
-                <StaticMenuItemStyle ForeColor="White" HorizontalPadding="20px" VerticalPadding="10px" />
-            </asp:Menu>
-            </strong></td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td class="auto-style5"></td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-</table>
-</asp:Content>
-<asp:Content ID="Content5" runat="server" contentplaceholderid="head">
-    <style type="text/css">
-    .auto-style4 {
-        width: 100%;
-        height: 100%;
-    }
-    .auto-style5 {
-        height: 21px;
-    }
-</style>
+<asp:Content ID="Content3" ContentPlaceHolderID="CUERPO" runat="server">
+    <div class="col-sm-3 col-md-2 sidebar">
+    <asp:Menu ID="mnuControl" runat="server" RenderingMode="List" Orientation="Vertical" StaticMenuStyle-CssClass="nav nav-sidebar" IncludeStyleBlock="false" Width="100%">
+        <Items>
+            <asp:MenuItem Value="opcAggControl" Text="Nuevo Contról"></asp:MenuItem>
+            <asp:MenuItem Value="opcEditControl" Text="Editar Contról"></asp:MenuItem>
+            <asp:MenuItem Value="opcBuscarControl" Text="Buscar Contról"></asp:MenuItem>
+        </Items>
+    </asp:Menu>
+</div>
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">Control</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Código:</strong>
+            <div class="row">
+                <div class="col-md-9">
+                    <asp:TextBox ID="txtCodigo" runat="server" CssClass="form-control"></asp:TextBox>
+                </div>
+                <div class="col-md-2">
+                    <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-md btn-success" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <strong>Fecha:<asp:TextBox ID="txtFecha" runat="server" CssClass="form-control"></asp:TextBox>
+            </strong>
+        </div>
+    </div>
+    <div class="row tmg-10">
+        <div class="col-md-6">
+            <div class="row tmg-10">
+                <div class="col-md-12">
+                    <strong>Cédula Cliente:</strong>
+                    <asp:TextBox ID="txtCedulaCliente" runat="server" CssClass="form-control"></asp:TextBox>
+                </div>
+                <div class="col-md-12 tmg-10">
+                    <strong>Nombre Cliente:</strong>
+                    <asp:TextBox ID="txtNombreCliente" runat="server" CssClass="form-control"></asp:TextBox>
+                </div>
+                <div class="col-md-12 tmg-10">
+                    <strong>Mascota:</strong>
+                    <asp:DropDownList ID="ddlMacota" Width="100%" CssClass="form-control" runat="server"></asp:DropDownList>
+                </div>
+                <div class="col-md-12 tmg-10">
+                    <strong>Peso de la Mascota:</strong>
+                    <asp:TextBox ID="txtPeso" runat="server" CssClass="form-control"></asp:TextBox>
+                </div>
+                <div class="col-md-12 tmg-10">
+                    <strong>Edad de la Mascota:</strong>
+                    <asp:TextBox ID="txtEdad" runat="server" CssClass="form-control"></asp:TextBox>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 tmg-10">
+            <strong>Próxima Cita</strong>
+            <asp:Calendar ID="CalendarProxCita" runat="server" Width="100%" CellPadding="5" Height="300px" CssClass="tmg-10">
+                <TitleStyle BackColor="#0F3D64" Font-Bold="True" ForeColor="White" />
+                </asp:Calendar>
+        </div>
+    </div>
+    
+    <asp:Panel ID="panelServicio" runat="server">
+        <div class="row tmg-10">
+            <div class="col-md-6">
+                <strong>Servicio:</strong>
+                <asp:TextBox ID="txtServicio" runat="server" CssClass="form-control"></asp:TextBox>
+            </div>
+            <div class="col-md-6">
+                <strong>Valor del Servicio:</strong>
+                <asp:TextBox ID="txtVlrServicio" runat="server" CssClass="form-control"></asp:TextBox>
+            </div>
+        </div>
+        <div class="row tmg-10">
+            <div class="col-md-6">
+                <strong>Empleado:</strong>
+                <asp:DropDownList runat="server" Width="100%" CssClass="form-control"></asp:DropDownList>
+            </div>
+            <div class="col-md-6 tmg-10">
+                <asp:Button ID="btnAgregar" Text="Agregar" CssClass="btn btn-warning btn-lg" runat="server"/>
+                <asp:Button ID="btnQuitar" Text="Quitar" CssClass="btn btn-danger btn-lg" runat="server"/>                    
+            </div>
+        </div>
+    </asp:Panel>
+
+    <div class="row tmg-10">
+        <div class="col-md-6 col-md-offset-2">
+            <asp:TextBox ID="txtTotalPago" runat="server"></asp:TextBox>
+        </div>
+    </div>
+
+    <h2 class="sub-header">Registro de controles</h2>
+    <div class="table-responsive">
+        <asp:GridView runat="server" CssClass="table table-striped">
+            <AlternatingRowStyle BackColor="#E1E1E1" />
+        </asp:GridView>
+    </div>
+</div>
 </asp:Content>
 

@@ -2,146 +2,116 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+<html lang="es-co">
+  <head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Contról Veterinario</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="src/bootstrap/bootstrap.css" />
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="src/bootstrap/dashboard.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        body {
-           margin: 0px;
-           padding: 0px;
-           border: 0px;
-           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            width: 344px;
-        }
-        .auto-style3 {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <form id="frmPrincipal" runat="server">
+      <style type="text/css">
+          body {
+              margin-top: 50px;
+          }
+          .navbar-blue {
+              background: #0f3d64;
+              color: white;
+              padding: 10px 10px;
+          }
+          .navbar-blue a {
+              color: white;
+          }
+          .navbar-blue a:hover {
+              color: #0f3d64;
+          }
+          .margin-right-20 {
+              margin-right: 20px;
+          }
+          #MENU_mnuControl {
+              float: right !important;
+          }
+          #CUERPO_mnuControl {
+              float: none !important;
+          }
+          *[role="menu"]{
+              float: none !important;
+          }
+          .tmg-10 {
+              margin-top: 10px;
+          }
+      </style>
+  </head>
+  <body>
+<form id="formMenu" runat="server">
+    <nav class="navbar navbar-blue navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <span class="navbar-left">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/src/img/logo.png" Height="45px" ImageAlign="Baseline" CssClass="margin-right-20"/>
+            </span>
+          <span class="navbar-brand">Contról Veterinario</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <asp:ContentPlaceHolder ID="MENU" runat="server">
+
+              <asp:Menu ID="mnuControl" runat="server" RenderingMode="List" StaticMenuStyle-CssClass="nav navbar-nav navbar-right">
+                <Items>
+                    <asp:MenuItem Value="opcControl" Text="Controles" NavigateUrl="~/frmControl.aspx"></asp:MenuItem>
+                    <asp:MenuItem Value="opcServicios" Text="Servicios"></asp:MenuItem>
+                    <asp:MenuItem Value="opcEmpleados" Text="Empleados"></asp:MenuItem>
+                    <asp:MenuItem Value="opcClientes" Text="Clientes"></asp:MenuItem>
+                </Items>
+              </asp:Menu>
+
+          </asp:ContentPlaceHolder>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
 
 
-        <table cellpadding="0" cellspacing="0" class="auto-style1">
-            <tr>
-                <td class="auto-style2" style="background-color: #0033CC; color: #FFFFFF">
-                    <table cellpadding="0" cellspacing="0" class="auto-style1">
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">
-                                <asp:Image ID="Image1" runat="server" Height="130px" ImageUrl="~/imagenes/logotipo.png" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">
-                                <asp:ContentPlaceHolder ID="Encabezado" runat="server">
-                                    <p>
-                                        SISTEMA DE CONTROL VETERINARIO</p>
-                                </asp:ContentPlaceHolder>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">
-                                <asp:ContentPlaceHolder ID="Menu" runat="server">
-                                </asp:ContentPlaceHolder>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td aria-orientation="horizontal" class="auto-style3" rowspan="1">&nbsp;</td>
-                        </tr>
-                    </table>
-                </td>
-                <td class="auto-style3">
-                    <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
-                        <asp:ScriptManager ID="ScriptManager1" runat="server">
-                        </asp:ScriptManager>
-                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                        </asp:UpdatePanel>
-                    </asp:ContentPlaceHolder>
-                </td>
-            </tr>
-            </table>
+            <asp:ContentPlaceHolder ID="CUERPO" runat="server">
 
+            </asp:ContentPlaceHolder>
 
-    </form>
-</body>
+      </div>
+    </div>
+</form>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="src/bootstrap/jquery.min.js"><\/script>')</script>
+    <script src="src/bootstrap/bootstrap.min.js"></script>
+  </body>
 </html>
