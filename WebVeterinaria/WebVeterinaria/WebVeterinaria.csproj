@@ -78,6 +78,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="frmCliente.aspx" />
+    <Content Include="frmEmpleado.aspx" />
+    <Content Include="frmMedicamento.aspx" />
+    <Content Include="frmRaza.aspx" />
+    <Content Include="frmMascota.aspx" />
+    <Content Include="frmServicio.aspx" />
     <Content Include="frmControl.aspx" />
     <Content Include="imagenes\logotipo.png" />
     <Content Include="packages.config" />
@@ -106,6 +112,48 @@
     <Compile Include="clsControl.cs" />
     <Compile Include="clsRaza.cs" />
     <Compile Include="clsServicio.cs" />
+    <Compile Include="frmCliente.aspx.cs">
+      <DependentUpon>frmCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCliente.aspx.designer.cs">
+      <DependentUpon>frmCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpleado.aspx.cs">
+      <DependentUpon>frmEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEmpleado.aspx.designer.cs">
+      <DependentUpon>frmEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamento.aspx.cs">
+      <DependentUpon>frmMedicamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMedicamento.aspx.designer.cs">
+      <DependentUpon>frmMedicamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRaza.aspx.cs">
+      <DependentUpon>frmRaza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRaza.aspx.designer.cs">
+      <DependentUpon>frmRaza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMascota.aspx.cs">
+      <DependentUpon>frmMascota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMascota.aspx.designer.cs">
+      <DependentUpon>frmMascota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmServicio.aspx.cs">
+      <DependentUpon>frmServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmServicio.aspx.designer.cs">
+      <DependentUpon>frmServicio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmControl.aspx.cs">
       <DependentUpon>frmControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

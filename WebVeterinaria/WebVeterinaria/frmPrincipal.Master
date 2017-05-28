@@ -85,9 +85,12 @@
               <asp:Menu ID="mnuControl" runat="server" RenderingMode="List" StaticMenuStyle-CssClass="nav navbar-nav navbar-right">
                 <Items>
                     <asp:MenuItem Value="opcControl" Text="Controles" NavigateUrl="~/frmControl.aspx"></asp:MenuItem>
-                    <asp:MenuItem Value="opcServicios" Text="Servicios"></asp:MenuItem>
-                    <asp:MenuItem Value="opcEmpleados" Text="Empleados"></asp:MenuItem>
-                    <asp:MenuItem Value="opcClientes" Text="Clientes"></asp:MenuItem>
+                    <asp:MenuItem Value="opcMascota" Text="Mascotas" NavigateUrl="~/frmMascota.aspx"></asp:MenuItem>
+                    <asp:MenuItem Value="opcRaza" Text="Razas" NavigateUrl="~/frmRaza.aspx"></asp:MenuItem>
+                    <asp:MenuItem Value="opcServicios" Text="Servicios" NavigateUrl="~/frmServicio.aspx"></asp:MenuItem>
+                    <asp:MenuItem Value="opcMedicamento" Text="Medicamentos" NavigateUrl="~/frmMedicamento.aspx"></asp:MenuItem>
+                    <asp:MenuItem Value="opcEmpleados" Text="Empleados" NavigateUrl="~/frmEmpleado.aspx"></asp:MenuItem>
+                    <asp:MenuItem Value="opcClientes" Text="Clientes" NavigateUrl="~/frmCliente.aspx"></asp:MenuItem>
                 </Items>
               </asp:Menu>
 

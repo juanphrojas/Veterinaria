@@ -10,7 +10,7 @@
 namespace WebVeterinaria {
     
     
-    public partial class Formulario_web1 {
+    public partial class Formulario_web12 {
         
         /// <summary>
         /// Control mnuControl.
@@ -22,13 +22,13 @@ namespace WebVeterinaria {
         protected global::System.Web.UI.WebControls.Menu mnuControl;
         
         /// <summary>
-        /// Control PanelControl.
+        /// Control PanelMascota.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelControl;
+        protected global::System.Web.UI.WebControls.Panel PanelMascota;
         
         /// <summary>
         /// Control txtCodigo.
@@ -49,22 +49,22 @@ namespace WebVeterinaria {
         protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
-        /// Control txtFecha.
+        /// Control txtCcCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFecha;
+        protected global::System.Web.UI.WebControls.TextBox txtCcCliente;
         
         /// <summary>
-        /// Control txtCedulaCliente.
+        /// Control btnBuscarXCedula.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCedulaCliente;
+        protected global::System.Web.UI.WebControls.Button btnBuscarXCedula;
         
         /// <summary>
         /// Control txtNombreCliente.
@@ -76,31 +76,31 @@ namespace WebVeterinaria {
         protected global::System.Web.UI.WebControls.TextBox txtNombreCliente;
         
         /// <summary>
-        /// Control ddlMacota.
+        /// Control ddlTipo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMacota;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTipo;
         
         /// <summary>
-        /// Control txtPeso.
+        /// Control ddlRaza.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPeso;
+        protected global::System.Web.UI.WebControls.DropDownList ddlRaza;
         
         /// <summary>
-        /// Control txtEdad.
+        /// Control rbtnEstado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEdad;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbtnEstado;
         
         /// <summary>
         /// Control CalendarProxCita.
@@ -110,69 +110,6 @@ namespace WebVeterinaria {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar CalendarProxCita;
-        
-        /// <summary>
-        /// Control panelServicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panelServicio;
-        
-        /// <summary>
-        /// Control txtServicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtServicio;
-        
-        /// <summary>
-        /// Control txtVlrServicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtVlrServicio;
-        
-        /// <summary>
-        /// Control btnAgregarServicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregarServicio;
-        
-        /// <summary>
-        /// Control btnQuitar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnQuitar;
-        
-        /// <summary>
-        /// Control txtTotalPago.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTotalPago;
-        
-        /// <summary>
-        /// Control btnAgregarControl.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregarControl;
         
         /// <summary>
         /// Control panelMensaje.
@@ -202,12 +139,12 @@ namespace WebVeterinaria {
         protected global::System.Web.UI.WebControls.Panel PanelRegistros;
         
         /// <summary>
-        /// Control grvControles.
+        /// Control grvMascotas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvControles;
+        protected global::System.Web.UI.WebControls.GridView grvMascotas;
     }
 }
