@@ -91,6 +91,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="src\bootstrap\bootstrap.css" />
+    <Content Include="src\bootstrap\bootstrap.min.js" />
+    <Content Include="src\bootstrap\dashboard.css" />
+    <Content Include="src\bootstrap\ie10-viewport-bug-workaround.css" />
+    <Content Include="src\bootstrap\jquery.min.js" />
+    <Content Include="src\img\logo.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
