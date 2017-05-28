@@ -43,6 +43,12 @@
                 </div>
 
             </div>
+
+            <div class="row tmg-10">
+                <div class="col-md-12">
+                    <asp:Button ID="btnAggRaza" Text="Registrar Raza" CssClass="btn btn-success" runat="server"/>
+                </div>
+            </div>
         </asp:Panel>
 
 

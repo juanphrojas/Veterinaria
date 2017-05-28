@@ -79,7 +79,7 @@
                     <asp:DropDownList runat="server" Width="100%" CssClass="form-control"></asp:DropDownList>
                 </div>
                 <div class="col-md-6 tmg-10">
-                    <asp:Button ID="btnAgregarServicio" Text="Agregar Servicio" CssClass="btn btn-primary" runat="server"/>
+                    <asp:Button ID="btnAgregarServicio" Text="Agregar Servicio" CssClass="btn btn-info" runat="server"/>
                     <asp:Button ID="btnQuitar" Text="Quitar Servicio" CssClass="btn btn-danger" runat="server"/>                    
                 </div>
             </div>

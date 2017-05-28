@@ -57,7 +57,7 @@
 
                     <div class="row tmg-10">
                         <div class="col-md-12 col-md-offset-8">
-                            <asp:Button ID="btnRegistrar" Text="Registrar Empleado" CssClass="btn btn-primary" runat="server"/>
+                            <asp:Button ID="btnRegistrar" Text="Registrar Empleado" CssClass="btn btn-success" runat="server"/>
                             <asp:Button ID="btnModificar" Text="Modificar Empleado" CssClass="btn btn-warning" runat="server"/>
                         </div>
                     </div>

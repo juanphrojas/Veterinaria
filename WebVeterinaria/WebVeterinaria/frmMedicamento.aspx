@@ -34,7 +34,7 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <asp:Button ID="btnRegistrar" Text="Registrar Medicamento" CssClass="btn btn-primary" runat="server"/>
+                    <asp:Button ID="btnRegistrar" Text="Registrar Medicamento" CssClass="btn btn-success" runat="server"/>
                 </div>
             </div>
         </asp:Panel>

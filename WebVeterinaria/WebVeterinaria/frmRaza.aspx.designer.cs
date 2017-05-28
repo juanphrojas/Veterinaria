@@ -76,6 +76,15 @@ namespace WebVeterinaria {
         protected global::System.Web.UI.WebControls.Button btnBuscarXTipo;
         
         /// <summary>
+        /// Control btnAggRaza.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAggRaza;
+        
+        /// <summary>
         /// Control panelMensaje.
         /// </summary>
         /// <remarks>

@@ -51,7 +51,7 @@
                         </div>
                         <div class="row tmg-10">
                             <div class="col-md-12">
-                                <asp:Button ID="btnAggTel" Text="Agregar Teléfono" CssClass="btn btn-primary" runat="server"/>
+                                <asp:Button ID="btnAggTel" Text="Agregar Teléfono" CssClass="btn btn-info" runat="server"/>
                             </div>
                         </div>
                         <div class="row tmg-10">
@@ -90,7 +90,7 @@
                         </div>
                         <div class="row tmg-10">
                             <div class="col-md-12">
-                                <asp:Button ID="btnAggDirec" Text="Agregar Dirección" CssClass="btn btn-primary" runat="server"/>
+                                <asp:Button ID="btnAggDirec" Text="Agregar Dirección" CssClass="btn btn-info" runat="server"/>
                             </div>
                         </div>
                         <div class="row tmg-10">
@@ -105,11 +105,20 @@
                                 </asp:Panel>
                             </div>
                         </div>
+
                     </asp:Panel>
 
                 </div>
 
             </div>
+
+            <div class="row tmg-10">
+                <div class="col-md-12 col-md-offset-4">
+                    <asp:Button ID="btnRegistrar" Text="Registrar Cliente" CssClass="btn btn-success" runat="server"/>
+                    <asp:Button ID="btnModificar" Text="Modificar Cliente" CssClass="btn btn-warning" runat="server"/>
+                </div>
+            </div>
+
         </asp:Panel>
 
         <asp:Panel ID="panelMensaje" runat="server">

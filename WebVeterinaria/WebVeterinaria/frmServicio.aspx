@@ -40,7 +40,7 @@
                         <asp:DropDownList ID="ddlCargo" CssClass="form-control" runat="server"></asp:DropDownList>
                     </div>
                     <div class="row tmg-10">
-                        <asp:Button ID="btnRegServicio" Text="Registrar Nuevo Servicio" CssClass="btn btn-primary" runat="server"/>
+                        <asp:Button ID="btnRegServicio" Text="Registrar Nuevo Servicio" CssClass="btn btn-success" runat="server"/>
                         <asp:Button ID="btnModServicio" Text="Modificar Servicio" CssClass="btn btn-warning" runat="server"/>
                     </div>
                 </div>
