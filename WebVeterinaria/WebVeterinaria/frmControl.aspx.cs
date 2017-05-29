@@ -27,10 +27,12 @@ namespace WebVeterinaria
                         Response.Redirect("~/SplashScreen.aspx");
                     }
 
+                    txtEmpleado.Text = Usuario;
+
                 }
                 catch (Exception ex)
                 {
-                    lblMensaje.Text = ex.Message;
+                    Response.Redirect("~/SplashScreen.aspx");
                 }
             }
         }

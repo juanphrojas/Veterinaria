@@ -113,7 +113,7 @@
             </div>
 
             <div class="row tmg-10">
-                <div class="col-md-12 col-md-offset-4">
+                <div class="col-md-6 col-md-offset-4">
                     <asp:Button ID="btnRegistrar" Text="Registrar Cliente" CssClass="btn btn-success" runat="server"/>
                     <asp:Button ID="btnModificar" Text="Modificar Cliente" CssClass="btn btn-warning" runat="server"/>
                 </div>

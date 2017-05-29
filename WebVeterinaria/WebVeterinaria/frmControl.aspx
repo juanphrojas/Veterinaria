@@ -63,6 +63,7 @@
         </div>
     
         <asp:Panel ID="panelServicio" runat="server">
+            <h3 class="sub-header">Servicios</h3>
             <div class="row tmg-10">
                 <div class="col-md-6">
                     <strong>Servicio:</strong>
@@ -76,7 +77,7 @@
             <div class="row tmg-10">
                 <div class="col-md-6">
                     <strong>Empleado:</strong>
-                    <asp:DropDownList runat="server" Width="100%" CssClass="form-control"></asp:DropDownList>
+                    <asp:TextBox ID="txtEmpleado" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
                 <div class="col-md-6 tmg-10">
                     <asp:Button ID="btnAgregarServicio" Text="Agregar Servicio" CssClass="btn btn-info" runat="server"/>
@@ -89,7 +90,7 @@
             <div class="col-md-4">
                 <strong>Valor Total</strong>
                 <asp:TextBox ID="txtTotalPago" runat="server" CssClass="form-control"></asp:TextBox>
-                <asp:Button ID="btnAgregarControl" Text="Agregar Control" runat="server" CssClass="btn btn-success btn-lg tmg-10"/>
+                <asp:Button ID="btnAgregarControl" Text="Agregar Control" runat="server" CssClass="btn btn-success tmg-10"/>
             </div>
         </div>
     </asp:Panel>

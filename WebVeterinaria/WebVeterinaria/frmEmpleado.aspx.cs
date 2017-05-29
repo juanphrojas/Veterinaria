@@ -30,7 +30,7 @@ namespace WebVeterinaria
                 }
                 catch (Exception ex)
                 {
-                    lblMensaje.Text = "Ups! Ah ocurrido un error ! \n " + ex.Message;
+                    Response.Redirect("~/SplashScreen.aspx");
                 }
             }
         }
