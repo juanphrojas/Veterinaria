@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/frmPrincipal.Master" AutoEventWireup="true" CodeBehind="frmCliente.aspx.cs" Inherits="WebVeterinaria.Formulario_web16" %>
 <asp:Content ID="Content3" ContentPlaceHolderID="CUERPO" runat="server">
     <div class="col-sm-3 col-md-2 sidebar">
-        <asp:Menu ID="mnuControl" runat="server" RenderingMode="List" Orientation="Vertical" StaticMenuStyle-CssClass="nav nav-sidebar" IncludeStyleBlock="false" Width="100%">
+        <asp:Menu ID="mnuControl" runat="server" RenderingMode="List" Orientation="Vertical" StaticMenuStyle-CssClass="nav nav-sidebar" IncludeStyleBlock="false" Width="100%" OnMenuItemClick="mnuControl_MenuItemClick">
             <Items>
                 <asp:MenuItem Value="opcAggCliente" Text="Registrar Cliente"></asp:MenuItem>
                 <asp:MenuItem Value="opcEditCliente" Text="Editar Cliente"></asp:MenuItem>
@@ -33,7 +33,7 @@
 
                     <div class="tmg-10">
                         <strong>Email:</strong>
-                        <asp:TextBox ID="txtNombreCliente" TextMode="Email" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtEmail" TextMode="Email" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
 
 

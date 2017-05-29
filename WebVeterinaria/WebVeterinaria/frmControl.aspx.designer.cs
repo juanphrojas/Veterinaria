@@ -157,15 +157,6 @@ namespace WebVeterinaria {
         protected global::System.Web.UI.WebControls.Button btnAgregarServicio;
         
         /// <summary>
-        /// Control btnQuitar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnQuitar;
-        
-        /// <summary>
         /// Control txtTotalPago.
         /// </summary>
         /// <remarks>

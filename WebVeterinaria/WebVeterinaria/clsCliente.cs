@@ -80,11 +80,7 @@ namespace WebVeterinaria
 
         private bool ValidarDatos()
         {
-            if (string.IsNullOrEmpty(Cedula))
-            {
-                strError = "Falta el numero de la cedula";
-                return false;
-            }
+            
 
             if (string.IsNullOrEmpty(Nombre))
             {
@@ -103,41 +99,22 @@ namespace WebVeterinaria
                 strError = "La fecha de nacimiento no es valida";
                 return false;
             }
-
-            if (string.IsNullOrEmpty(NumeroTel))
-            {
-                strError = "Falta el telefono";
-                return false;
-            }
-            if (string.IsNullOrEmpty(Direccion))
-            {
-                strError = "Falta direccion";
-                return false;
-            }
-
-            if (string.IsNullOrEmpty(idEmpleado.ToString()))
-            {
-                strError = "Falta el empleado";
-                return false;
-            }
+            
+            
             if (idEmpleado <= 0)
             {
                 strError = "El empleado seleccionado no es valido";
                 return false;
             }
-            if (string.IsNullOrEmpty(TipoTel.ToString()))
+            
+            return true;
+        }
+
+        private bool ValidarDireccion()
+        {
+            if (string.IsNullOrEmpty(Direccion))
             {
-                strError = "Falta el Tipo de telefono";
-                return false;
-            }
-            if (TipoTel <= 0)
-            {
-                strError = "El tipo de telefono seleccionado no es valido";
-                return false;
-            }
-            if (string.IsNullOrEmpty(Ciudad.ToString()))
-            {
-                strError = "Falta la ciudad";
+                strError = "Falta direccion";
                 return false;
             }
             if (Ciudad <= 0)
@@ -146,6 +123,35 @@ namespace WebVeterinaria
                 return false;
             }
             return true;
+        }
+
+        private bool ValidarTelefono()
+        {
+            if (string.IsNullOrEmpty(NumeroTel))
+            {
+                strError = "Falta el telefono";
+                return false;
+            }
+            if (TipoTel <= 0)
+            {
+                strError = "El tipo de telefono seleccionado no es valido";
+                return false;
+            }
+            return true;
+        }
+         private bool ValidarCedula()
+        {
+            if (string.IsNullOrEmpty(Cedula))
+            {
+                strError = "Falta el numero de la cedula";
+                return false;
+            }
+            return true;
+        }
+
+        private string GenerarFecha()
+        {
+            return FechaNacimiento.ToShortDateString().Split('/')[2] + FechaNacimiento.ToShortDateString().Split('/')[1] + FechaNacimiento.ToShortDateString().Split('/')[0];
         }
 
         private bool Grabar()
@@ -179,7 +185,7 @@ namespace WebVeterinaria
         #endregion
 
         #region metodos publicos
-        public bool BuscarCliente(string _Cedula, GridView grid)
+        public bool BuscarCliente(string _Cedula, GridView gridGeneral, GridView gridDireccion, GridView gridTelefono)
         {
             try
             {
@@ -218,8 +224,14 @@ namespace WebVeterinaria
                 Mydt.Clear();
                 //Llenar el Grid
                 Mydt = Myds.Tables[1];
-                grid.DataSource = Mydt;
-                grid.DataBind();
+                gridGeneral.DataSource = Mydt;
+                gridGeneral.DataBind();
+                Mydt = Myds.Tables[2];
+                gridDireccion.DataSource = Mydt;
+                gridDireccion.DataBind();
+                Mydt = Myds.Tables[3];
+                gridTelefono.DataSource = Mydt;
+                gridTelefono.DataBind();
                 return true;
             }
             catch (Exception ex)
@@ -267,25 +279,27 @@ namespace WebVeterinaria
             }
         }
 
-        public bool insertar()
+        public bool Insertar()
         {
             try
             {
                 if (!ValidarDatos())
                     return false;
-                strSQL = "exec USP_CLIente_Grabar '" + Cedula + "','" + Nombre + "','" + idEmpleado + "','" + Email + "','" + FechaNacimiento +"';";
+                if (!ValidarCedula())
+                    return false;
+                if (!ValidarDireccion())
+                    return false;
+                if (!ValidarTelefono())
+                    return false;
+
+                strSQL = "exec USP_CLIente_Grabar '" + Cedula + "','" + Nombre + "','" + idEmpleado + "','" + Email + "','" + GenerarFecha() +"';";
                 if (!Grabar())
                     return false;
 
                 strSQL = "USP_CLIente_AgregarTelefono '" + Cedula + "','" + NumeroTel + "'," + idEmpleado + "," + TipoTel + ";";
                 if (!Grabar())
-                {
-                    //si falla borrar encabezado
-
                     return false;
-                }
-
-
+                
                 strSQL = "USP_CLIente_AgregarDomicilio '" + Cedula + "','" + Direccion + "'," + idEmpleado + "," + Ciudad + ";";
                 if (!Grabar())
                     return false;
@@ -305,8 +319,59 @@ namespace WebVeterinaria
             {
                 if (!ValidarDatos())
                     return false;
-                strSQL = "exec USP_CLIente_Modificar '" + Cedula + "','" + Nombre + "','" + idEmpleado + "','" + Email + "','" +FechaNacimiento+ "';";
+                if (!ValidarCedula())
+                    return false;
+                strSQL = "exec USP_CLIente_Modificar '" + Cedula + "','" + Nombre + "','" + idEmpleado + "','" + Email + "','" +GenerarFecha()+ "';";
                 return Grabar();
+            }
+            catch (Exception ex)
+            {
+                strError = ex.Message;
+                return false;
+            }
+        }
+
+        public bool AgregarTelefono()
+        {
+            try
+            {
+                if (!ValidarCedula())
+                    return false;
+                if (!ValidarTelefono())
+                    return false;
+
+                strSQL = "USP_CLIente_AgregarTelefono '" + Cedula + "','" + NumeroTel + "'," + idEmpleado + "," + TipoTel + ";";
+                if (!Grabar())
+                    return false;
+
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                strError = ex.Message;
+                return false;
+            }
+        }
+
+        public bool AgregarDireccion()
+        {
+            try
+            {
+                if (!ValidarCedula())
+                    return false;
+                if (!ValidarDireccion())
+                    return false;
+
+                strSQL = "USP_CLIente_AgregarTelefono '" + Cedula + "','" + NumeroTel + "'," + idEmpleado + "," + TipoTel + ";";
+                if (!Grabar())
+                    return false;
+
+                strSQL = "USP_CLIente_AgregarDomicilio '" + Cedula + "','" + Direccion + "'," + idEmpleado + "," + Ciudad + ";";
+                if (!Grabar())
+                    return false;
+
+                return true;
             }
             catch (Exception ex)
             {
